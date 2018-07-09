@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- necessary -->
+    <meta name="keywords" content="1,2,3">
+    <meta name="description" content="">
+    <!-- description -->
+    <meta name="renderer" content="webkit">
+    <title>作者主页</title>
+    <!-- base -->
+    <link href="ctrl/Font-Awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="ctrl/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/comm/swiper.min.css" rel="stylesheet">
+    <link href="css/comm/base.css" rel="stylesheet">
+    <link href="css/index/index.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header class="clear full-w min-h-120">
+        <div class="container">
+            <div class="col-xs-2 pt-35 pb-35 pl-0 pr-0">
+                <img src="../img/index/logov1.png" alt="">
+            </div>
+            <div class="clear col-xs-10 pl-0 pr-0">
+                <div class="col-xs-12 pt-45 pl-0 pr-0">
+                    <ul class="col-xs-10 clo-md-9 col-xs-offset-1 col-md-offset-2 pull-left mainnav clear dis-ib pl-0 pr-0">
+                        <li class="col-xs-3 text-center f-14 cur-p pd-10 f-w"><a class="col-68676B t-nonehove pb-7 navborpitch hovecol-black" href="">主页</a></li>
+                        <li class="col-xs-3 text-center f-14 cur-p pd-10 f-w"><a class="col-68676B t-nonehove pb-7" href="about/HK_About.html">个人简介</a></li>
+                        <li class="col-xs-3 text-center f-14 cur-p pd-10 f-w"><a class="col-68676B t-nonehove pb-7" href="shopping/HK_shopping.html">作品展示</a></li>
+                        <li class="col-xs-3 text-center f-14 cur-p pd-10 f-w"><a class="col-68676B t-nonehove pb-7" href="news/HK_NewsIndex.html">联系作者</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="js/comm/jquery.min.js"></script>
+    <script src="ctrl/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/comm/swiper.jquery.min.js"></script>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container-main', {
+            loop: true,
+            autoplay : 3000,
+            autoplayDisableOnInteraction : false,
+            autoHeight: true,
+            pagination: '.swiper-paginationmian',
+            paginationClickable :true,
+            paginationBulletRender: function (swiper, index, className) {
+                return '<span class="' + className + '">' + (index + 1) + '<div class=\"mainswiper-pagination-bullet-div\"></div>'+'</span>';
+            }
+        })
+        var mySwiperv2 = new Swiper ('.swiper-container-tipsv1', {
+            prevButton:'.swiper-tipsv1-button-prev',
+            nextButton:'.swiper-tipsv1-button-next',
+            slidesPerView : 4,
+            spaceBetween : 0,
+        })        
+    </script>
+    <script src="js/index/index.js"></script>
+</body>
+
+</html>
